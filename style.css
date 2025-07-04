@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+canvas {
+  background: url('images/background.jpg') no-repeat center center;
+  background-size: cover;
+  border: 3px solid #fff;
+}
+
+#mobile-controls {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 999;
+}
+
+#mobile-controls button {
+  padding: 18px 24px;
+  font-size: 22px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffaad4;
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  #mobile-controls {
+    display: none;
+  }
+}
